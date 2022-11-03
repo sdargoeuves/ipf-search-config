@@ -38,10 +38,9 @@ IPF_VERIFY = (os.getenv("IPF_VERIFY", "False")=="True")
 SANITIZED = (os.getenv("IPF_SANITIZED_CONFIG", "False")=="True")
 # Other static parameters
 SNAPSHOT_ID = os.getenv("IPF_SNAPSHOT", "$last")
+DEVICES_FILTER = os.getenv("DEVICES_FILTER")
 
 
-
-DEVICES_FILTER = {"hostname": ["like", "L38EXR"]}
 # INPUT data is the list of commands we want to search for in the configuration
 # 'ref': is an optional field
 # 'section': specifies in which section we should look for this command
